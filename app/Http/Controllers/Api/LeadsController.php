@@ -65,7 +65,7 @@ class LeadsController extends Controller
             return response()->json([
                 'status' => 'success',
                 'message' => 'lead logged'
-            ]);
+            ], 200);
         }
         else
             return response('', 403);
